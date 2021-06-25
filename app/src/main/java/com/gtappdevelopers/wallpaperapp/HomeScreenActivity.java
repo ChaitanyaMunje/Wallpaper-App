@@ -127,7 +127,7 @@ public class HomeScreenActivity extends AppCompatActivity implements CategoryRVA
             public Map<String, String> getHeaders() {
                 //in this method passing headers as key along with value as API keys.
                 HashMap<String, String> headers = new HashMap<>();
-                headers.put("Authorization", "Add your API key");
+                headers.put("Authorization", "Enter API Key");
                 //at last returning headers.
                 return headers;
             }
@@ -177,7 +177,7 @@ public class HomeScreenActivity extends AppCompatActivity implements CategoryRVA
             public Map<String, String> getHeaders() {
                 //in this method passing headers as key along with value as API keys.
                 HashMap<String, String> headers = new HashMap<>();
-                headers.put("Authorization", "563492ad6f917000010000010e57141f30b2437cb7746c1519d63ee5");
+                headers.put("Authorization", "Enter API Key");
                 //at last returning headers.
                 return headers;
             }

@@ -2,7 +2,6 @@ package com.gtappdevelopers.wallpaperapp;
 
 import android.app.WallpaperManager;
 import android.graphics.Bitmap;
-import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +19,7 @@ import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.load.engine.GlideException;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
-import com.muddzdev.styleabletoast.StyleableToast;
+import com.shashank.sony.fancytoastlib.FancyToast;
 
 import java.io.IOException;
 
@@ -90,12 +89,14 @@ public class WallpaperActivity extends AppCompatActivity {
                                   }
                         ).submit();
                 //displaying custom toast on below line.
-                new StyleableToast
-                        .Builder(WallpaperActivity.this)
-                        .text("Wallpaper Set to Home Screen")
-                        .textColor(Color.WHITE)
-                        .backgroundColor(getResources().getColor(R.color.black_shade_1))
-                        .show();
+//                new StyleableToast
+//                        .Builder(WallpaperActivity.this)
+//                        .text("Wallpaper Set to Home Screen")
+//                        .textColor(Color.WHITE)
+//                        .backgroundColor(getResources().getColor(R.color.black_shade_1))
+//                        .show();
+                FancyToast.makeText(WallpaperActivity.this, "Wallpaper Set to Home Screen", FancyToast.LENGTH_LONG, FancyToast.SUCCESS, false).show();
+
             }
         });
 
